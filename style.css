@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    position: fixed; 
+    background-color: black;
+    z-index: 3;
+    font-family: 'algerian';
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid red;
+}
+.logo{   
+    margin-top: 0px;
+    z-index: 2;
+}
+img{
+    width: 53px;
+}
+audio{
+    position: fixed;
+    top: 55px;
+    right: 5px;
+    width: 150px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia;
+    color: rgb(255, 255, 255);
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url('./img/gambar3.png') no-repeat center/cover;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+.heading{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-family: 'Magneto' ;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+#home h2{
+    color: rgb(255, 0, 0);
+}
+.heading span{
+    color: rgb(0, 0, 0);
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgb(0, 0, 0);
+}
+#about h1{
+    color: rgb(255, 0, 0);
+    margin: 55px;
+    font-family: 'Imprint MT Shadow';
+}
+.about{
+    display: flex;
+}
+.about img{
+    width: 500px;
+    height: 400px;
+    padding: 0px 30px;
+}
+.name{
+    padding:10px;
+}
+.name h2{
+    font-size: 2rem;
+    font-family: 'algerian';
+    color: rgb(255, 0, 0);
+}
+.name p{
+    font-size: 1.2rem;
+}
+.name ul li{
+    color: yellow;
+}
+/* Galery Section */
+#galery{
+    background-color: black;
+}
+#galery h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Imprint MT Shadow' ;
+    background-color:rgb(0, 0, 0);
+}
+.vidio1{
+    margin-left: 350px;
+}
+/* Contact Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+#contact h1{
+    margin: 50px;
+    color: rgb(255, 0, 0);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border-radius: 25px;
+}
+#message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#submit{
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: red;
+    color: rgb(0, 0, 0);
+}
+#submit:hover{
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.gambar1 img{
+    margin-top: 10px;
+    margin-left: 250px;
+    height: 165px;
+    width: 120px;
+}
